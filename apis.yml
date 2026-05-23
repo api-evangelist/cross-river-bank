@@ -1,0 +1,183 @@
+aid: cross-river-bank
+url: https://raw.githubusercontent.com/api-evangelist/cross-river-bank/refs/heads/main/apis.yml
+name: Cross River Bank
+kind: company
+description: >-
+  Cross River Bank is an FDIC-insured chartered bank that operates as a
+  sponsor bank and banking-as-a-service (BaaS) provider for fintech
+  companies, embedded-finance platforms, and crypto / stablecoin issuers. The
+  product surface is delivered through the Cross River Operating System
+  (COS) - a proprietary API-driven banking core with real-time subledger
+  generation - and includes accounts, ACH and Same-Day ACH, RTP and FedNow
+  instant payments, wires, card issuing and processing (Visa / Mastercard),
+  merchant acquiring, stablecoin rails, consumer and SMB lending,
+  and capital markets / loan participation services. API access is gated
+  behind a partner onboarding process; documentation and sandbox are at
+  docs.crossriver.com.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Banking
+  - Banking as a Service
+  - Sponsor Bank
+  - Embedded Finance
+  - Payments
+  - ACH
+  - RTP
+  - FedNow
+  - Cards
+  - Lending
+  - Stablecoin
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: cross-river-bank:cos
+    name: Cross River Operating System (COS)
+    description: >-
+      Proprietary API-driven banking core that underpins all Cross River
+      partner programs. Provides a real-time subledger, KYC / KYB,
+      compliance workflows, accounts, payments, cards, and lending primitives
+      behind a unified REST API surface. Access is granted to onboarded
+      partners only.
+    humanURL: https://www.crossriver.com/cos
+    baseURL: gated-partner-access
+    tags:
+      - Core Banking
+      - Subledger
+      - Platform
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:accounts-api
+    name: Cross River Accounts API
+    description: >-
+      REST API for opening and managing FDIC-insured deposit accounts
+      (checking, savings, purpose-built program accounts) on behalf of
+      partner-program end users. Includes balances, statements, holds, and
+      account-level controls.
+    humanURL: https://docs.crossriver.com
+    baseURL: gated-partner-access
+    tags:
+      - Accounts
+      - Deposits
+      - FDIC
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:payments-api
+    name: Cross River Payments API
+    description: >-
+      Unified payments API covering ACH and Same-Day ACH, FedNow and RTP
+      instant payments, domestic and international wires, and book transfers.
+      Includes payment origination, returns, and reporting.
+    humanURL: https://docs.crossriver.com
+    baseURL: gated-partner-access
+    tags:
+      - Payments
+      - ACH
+      - RTP
+      - FedNow
+      - Wire
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:card-payments-api
+    name: Cross River Card Payments API
+    description: >-
+      Card issuing and processing API spanning Visa, Mastercard, and regional
+      networks. Supports debit, credit, and prepaid programs, virtual / physical
+      card lifecycle, authorizations, settlement, and merchant acquiring.
+    humanURL: https://docs.crossriver.com
+    baseURL: gated-partner-access
+    tags:
+      - Cards
+      - Issuing
+      - Acquiring
+      - Visa
+      - Mastercard
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:lending-api
+    name: Cross River Lending / Loan Funding API
+    description: >-
+      Marketplace-lending and loan-origination API used by fintech lending
+      partners for consumer and SMB loan origination, underwriting, funding,
+      servicing, participation, and securitization.
+    humanURL: https://docs.crossriver.com
+    baseURL: gated-partner-access
+    tags:
+      - Lending
+      - Origination
+      - Loans
+      - Marketplace Lending
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:stablecoin
+    name: Cross River Stablecoin Payments
+    description: >-
+      Money-movement API supporting stablecoin pay-ins and pay-outs across
+      fiat rails for crypto and Web3 partners, with the bank serving as the
+      regulated on/off-ramp.
+    humanURL: https://www.crossriver.com/stablecoin
+    baseURL: gated-partner-access
+    tags:
+      - Stablecoin
+      - Crypto
+      - Pay-In
+      - Pay-Out
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:webhooks
+    name: Cross River Webhooks
+    description: >-
+      Outbound webhook events covering account, payment, card, and lending
+      lifecycle changes. Endpoints and signing secrets are configured per
+      partner program.
+    humanURL: https://docs.crossriver.com
+    baseURL: customer-configured
+    tags:
+      - Webhooks
+      - Events
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+  - aid: cross-river-bank:postman
+    name: Cross River Postman Collection
+    description: >-
+      Postman collection of the COS APIs distributed to onboarded partners to
+      accelerate sandbox testing and integration work.
+    humanURL: https://docs.crossriver.com
+    baseURL: gated-partner-access
+    tags:
+      - Postman
+      - Tooling
+      - Sandbox
+    properties:
+      - type: Documentation
+        url: https://docs.crossriver.com
+common:
+  - type: Website
+    url: https://www.crossriver.com/
+  - type: Documentation
+    url: https://docs.crossriver.com/
+  - type: PartnerPortal
+    url: https://www.crossriver.com/partners
+  - type: COS
+    url: https://www.crossriver.com/cos
+  - type: ContactSales
+    url: https://www.crossriver.com/contact-us
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cross-river-bank
+integrations:
+  - name: Visa
+  - name: Mastercard
+  - name: FedNow
+  - name: The Clearing House (RTP)
+  - name: NACHA (ACH)
+  - name: Fedwire
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
