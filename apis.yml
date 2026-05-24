@@ -171,6 +171,8 @@ common:
     url: https://www.crossriver.com/contact-us
   - type: LinkedIn
     url: https://www.linkedin.com/company/cross-river-bank
+  - type: LLMsTxt
+    url: https://docs.crossriver.com/llms.txt
 integrations:
   - name: Visa
   - name: Mastercard
