@@ -159,6 +159,8 @@ apis:
       - type: Documentation
         url: https://docs.crossriver.com
 common:
+  - type: DomainSecurity
+    url: security/cross-river-bank-domain-security.yml
   - type: Website
     url: https://www.crossriver.com/
   - type: Documentation
@@ -173,6 +175,8 @@ common:
     url: https://www.linkedin.com/company/cross-river-bank
   - type: LlmsText
     url: https://docs.crossriver.com/llms.txt
+  - url: https://www.crossriver.com/insights
+    type: Blog
 integrations:
   - name: Visa
   - name: Mastercard
