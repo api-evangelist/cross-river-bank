@@ -38,6 +38,18 @@ tags:
   - FedNow
   - Cards
   - Lending
+  - Stablecoins
+tags_raw:
+  - Banking
+  - Banking as a Service
+  - Sponsor Bank
+  - Embedded Finance
+  - Payments
+  - ACH
+  - RTP
+  - FedNow
+  - Cards
+  - Lending
   - Stablecoin
 created: '2026-05-23'
 modified: '2026-05-23'
@@ -70,6 +82,10 @@ apis:
     humanURL: https://docs.crossriver.com
     baseURL: gated-partner-access
     tags:
+      - Account
+      - Deposits
+      - FDIC
+    tags_raw:
       - Accounts
       - Deposits
       - FDIC
@@ -135,6 +151,11 @@ apis:
     humanURL: https://www.crossriver.com/stablecoin
     baseURL: gated-partner-access
     tags:
+      - Stablecoins
+      - Crypto
+      - Pay-In
+      - Payout
+    tags_raw:
       - Stablecoin
       - Crypto
       - Pay-In
@@ -151,6 +172,9 @@ apis:
     humanURL: https://docs.crossriver.com
     baseURL: customer-configured
     tags:
+      - Webhook
+      - Event
+    tags_raw:
       - Webhooks
       - Events
     properties:
