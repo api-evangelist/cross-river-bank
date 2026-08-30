@@ -49,7 +49,7 @@ tags:
   - FedNow
   - Cards
   - Lending
-  - Stablecoins
+  - Stablecoin
 tags_raw:
   - Banking
   - Banking as a Service
@@ -162,10 +162,10 @@ apis:
     humanURL: https://www.crossriver.com/stablecoin
     baseURL: gated-partner-access
     tags:
-      - Stablecoins
+      - Stablecoin
       - Crypto
       - Pay-In
-      - Payout
+      - Pay-Out
     tags_raw:
       - Stablecoin
       - Crypto
