@@ -206,6 +206,20 @@ apis:
       - type: Documentation
         url: https://docs.crossriver.com
 common:
+  - type: Support
+    url: https://www.crossriver.com/support
+  - type: DeveloperPortal
+    url: https://www.crossriver.com/developers
+  - type: PrivacyPolicy
+    url: https://www.crossriver.com/privacy-policy
+  - type: GettingStarted
+    url: https://docs.crossriver.com/get-started/quickstart
+  - type: AgenticAccess
+    url: agentic-access/cross-river-bank-agentic-access.yml
+  - type: Authentication
+    url: authentication/cross-river-bank-authentication.yml
+  - type: Signup
+    url: https://www.crossriver.com/contact
   - type: DomainSecurity
     url: security/cross-river-bank-domain-security.yml
   - type: Website
@@ -234,5 +248,3 @@ integrations:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
-x-parent: cross-river
-x-relationship: product
